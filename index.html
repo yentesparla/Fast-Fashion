@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#f3efe4">
+    <title>Je betaalt €5,99 — de prijs van fast fashion</title>
+    
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="story-intro" id="storyIntro">
+        <div class="story-intro-content">
+          <h1>Fast Fashion</h1>
+          <p>
+            Deze multimedia story is het best te bekijken op volledig scherm
+            en op een scherm van 14 inch.
+          </p>
+          <button id="startStory" type="button">Start de story</button>
+        </div>
+      </div>
+    <div class="progress"><b id="progress"></b></div>
+    <div class="chapter" id="chapter">De verborgen prijs van fast fashion</div>
+    
+    <main class="page">
+        <section class="section hero" data-chapter="De verborgen prijs van fast fashion">
+            <button
+                class="receipt-trigger"
+                id="receiptTrigger"
+                type="button"
+                aria-controls="receipt"
+                aria-expanded="false"
+            >
+                Het bonnetje <span aria-hidden="true">＋</span>
+            </button>
+    
+            <aside
+                class="receipt"
+                id="receipt"
+                hidden
+                aria-label="Kassabonnetje van het T-shirt"
+            >
+                <button
+                    class="receipt-close"
+                    id="receiptClose"
+                    type="button"
+                    aria-label="Sluit kassabon"
+                >
+                    ×
+                </button>
+    
+                <div class="receipt-brand">DE ECHTE PRIJS</div>
+                <div class="receipt-dash">- - - - - - - - - - - -</div>
+                <div class="receipt-row"><span>1 × T-shirt</span><b>€ 5,99</b></div>
+                <div class="receipt-dash">- - - - - - - - - - - -</div>
+                <div class="receipt-small">NIET OP DE KASSABON</div>
+                <div class="receipt-row"><span>Water en grondstoffen</span><b>•••</b></div>
+                <div class="receipt-row"><span>Arbeid en loon</span><b>•••</b></div>
+                <div class="receipt-row"><span>Transport en uitstoot</span><b>•••</b></div>
+                <div class="receipt-dash">- - - - - - - - - - - -</div>
+                <div class="receipt-row receipt-total"><span>TOTAAL</span><b>€ 5,99</b></div>
+                <p>De rest van de prijs betaalt iemand anders.</p>
+            </aside>
+    
+            <div class="hero-copy">
+                <h1>Je betaalt <span class="prijs">€5,99</span>.</h1>
+                                <h2>Maar wie betaalt de rest?</h2>
+                <div class="scroll-cue">
+                    <p>Scroll naar beneden om erachter te komen.</p><a href="#shirt-intro"
+                        aria-label="Scroll naar het verhaal"><span aria-hidden="true">↓</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section shirt-intro green-background" id="shirt-intro" data-chapter="Een goedkoop kledingstuk">
+            <div class="shirt-intro-copy">
+                <h2><strong>Een goedkoop kledingstuk.</strong><br>Maar hoe kan dat?</h2>
+            </div>
+            <div class="shirt-intro-content">
+                <img class="shirt-intro-shirt" src="/assets/Geel shirt met label.png" alt="Geel T-shirt met prijslabel van €5,99">
+                <img class="shirt-intro-bills" src="/assets/Bankbiljetten.png" alt="Textiel en bankbiljetten van tien, vijf en twintig euro">
+            </div>
+        </section>
+
+        <section class="section fast-fashion-intro" data-chapter="Kleding wordt sneller en goedkoper">
+
+            <img class="pink-cloth" src="/assets/AchtergrondRoze.png" alt="">
+        
+            <p class="fast-fashion-copy">
+                Kleding wordt steeds <strong>sneller en goedkoper</strong> geproduceerd.
+                Nieuwe trends en collecties volgen elkaar in hoog tempo op, waardoor we
+                gewend zijn geraakt aan het idee dat kleding <strong>goedkoop</strong> is
+                en we steeds iets nieuws kunnen kopen.
+            </p>
+        
+        
+        </section>
+        <section class="section label-section" id="story-begin"
+    data-chapter="Wat zit er in een T-shirt?">
+
+    <div class="label-background"></div>
+    <div class="swatches-clip" aria-hidden="true">
+        <img class="fast-fashion-swatches" src="/assets/stoffen.png" alt="">
+    </div>
+    <div class="label-content">
+        <h2><strong>Wat zit er verborgen?</strong></h2>
+        <p class="TekstBijShirt">
+            Klik op de labels om te zien welke impact deze stap heeft op ons en het milieu.
+        </p>
+    </div>
+
+    <div class="label-art">
+        <div class="label-canvas">
+            <img
+                class="shirt-body"
+                src="/assets/Tshirt met labels.png"
+                alt="T-shirt met losse labels"
+                >
+
+        <button class="label-asset transport" type="button"
+            data-title="TRANSPORT"
+            data-copy="Een shirt legt vaak duizenden kilometers af tussen grondstof, fabriek en winkel."
+            onclick="toonLabel(this)"
+            aria-label="Open label transport">
+        </button>
+
+        <button class="label-asset water" type="button"
+            data-title="WATER"
+            data-copy="Water is nodig bij de teelt, het verven en de afwerking van textiel."
+            onclick="toonLabel(this)"
+            aria-label="Open label water">
+        </button>
+
+        <button class="label-asset work" type="button"
+            data-title="ARBEID"
+            data-copy="De mensen die kleding maken hebben vaak lange werkdagen en verdienen niet altijd een leefbaar loon."
+            onclick="toonLabel(this)"
+            aria-label="Open label arbeid">
+        </button>
+
+        <button class="label-asset waste" type="button"
+            data-title="AFVAL"
+            data-copy="Veel kleding wordt weinig gedragen en belandt snel achter in de kast of bij het afval."
+            onclick="toonLabel(this)"
+            aria-label="Open label afval">
+        </button>
+
+        <button class="label-asset fiber" type="button"
+            data-title="GRONDSTOFFEN"
+            data-copy="Katoen, wol en polyester hebben elk een andere impact op natuur en mens."
+            onclick="toonLabel(this)"
+            aria-label="Open label grondstoffen">
+        </button>
+    </div>
+
+    <aside id="labelExplain" class="label-explain" aria-live="polite" hidden>
+        <button class="label-note-close" type="button"
+            onclick="document.getElementById('labelExplain').hidden = true"
+            aria-label="Sluit uitleg">×</button>
+
+        <span class="label-note-kicker">DE VERBORGEN IMPACT</span>
+        <strong id="labelExplainTitle"></strong>
+        <span id="labelExplainCopy"></span>
+        <div id="labelExplainSources" class="label-explain-sources"></div>
+    </aside>
+</section>
+        <section class="section water-section" data-chapter="De verborgen impact"><img class="water-fabric-top"
+                src="/assets/Water bovenkant.png" alt="Golvende lap blauwe denimstof"><img class="water-material"
+                src="/assets/Group 25.png" alt="Stalen blauwe en gele textiel">
+            <div class="water-content">
+                <h2>Hoeveel water?</h2>
+                <p>
+                    Katoenplanten hebben extreem veel water nodig, en ook het wassen en behandelen
+                    van stof kost duizenden liters per kledingstuk. Omdat kledingfabrieken en
+                    katoenvelden vaak in droge gebieden staan, worden lokale waterbronnen en meren
+                    in sneltempo leeggepompt. Het resultaat? Schoon drinkwater wordt schaars voor
+                    de mensen die er wonen.
+                
+                    <span class="water-source">
+                        <button class="water-source-trigger" type="button"
+                            aria-label="Toon bronnen over waterverbruik van textiel">
+                            ⓘ
+                        </button>
+                        <span class="water-source-popover">
+                            <strong>Bronnen</strong>
+                            <a href="https://www.eea.europa.eu/en/analysis/publications/textiles-and-the-environment-the-role-of-design-in-europes-circular-economy-1"
+                                target="_blank" rel="noopener noreferrer">
+                                European Environment Agency — watergebruik van textiel
+                            </a>
+                            <a href="https://www.waterfootprint.org/resources/Mekonnen-Hoekstra-2011-WaterFootprintCrops.pdf"
+                                target="_blank" rel="noopener noreferrer">
+                                Mekonnen &amp; Hoekstra — watervoetafdruk van gewassen
+                            </a>
+                        </span>
+                    </span>
+                </p>                <div class="water-quiz">
+                    <div class="quiz-label">Quizvraag</div>
+                    <h3>Hoeveel water verbruikt een gemiddelde EU-inwoner per jaar voor textielconsumptie?</h3>
+                    <div class="sliderbox"><input id="zoom" type="range" min="6000" max="15000" step="100" value="6000"
+                            aria-label="Kies je schatting tussen 6.000 en 15.000 liter">
+                        <div class="answer-labels"><span>6.000 liter</span><span>9.000 liter</span><span>15.000
+                                liter</span></div>
+                        <div class="readout" id="sliderReadout">Jouw schatting: 6.000 liter</div>
+                        <div class="quiz-feedback" id="quizFeedback" aria-live="polite">Schuif naar jouw schatting.
+                        </div>
+                        <div class="quiz-status" id="quizStatus" hidden aria-label="Goed antwoord"><span
+                                aria-hidden="true">✓</span></div>
+                    </div>
+                </div>
+            </div><img class="water-effect" id="waterEffect" src="/assets/Water effect met broek 1.png"
+                alt="Spijkerbroek van textiel">
+        </section>
+        <section class="section cotton-section" data-chapter="Uitputting van de aarde" data-material="cotton">
+            <div class="text">
+                <h2 class="TitelUitputting">Uitputting van de aarde</h2>
+                <p class="DoorlopendeTekstUitputting">Om al die kleren te maken, zijn ontzettend veel grondstoffen nodig. Denk aan gigantische stukken landbouwgrond voor katoen, maar ook aardolie om polyester van te maken.</p>
+                <p class="DoorlopendeTekstUitputting1">Klik op een materiaal en ontdek de impact.</p>
+                </p>
+            </div>
+            <div class="mat-tabs" role="group" aria-label="Kies grondstof">
+                <button type="button" aria-pressed="true" data-mat="cotton">
+                    Katoen (Natuurlijk)
+                </button>
+                <button type="button" aria-pressed="false" data-mat="poly">
+                    Polyester
+                </button>
+                <button type="button" aria-pressed="false" data-mat="wool">
+                    Wol (Dierlijk)
+                </button>
+            </div>
+            
+            <h3 id="matActiveTitle" class="mat-active-title">Katoen (Natuurlijk)</h3>
+            
+            <img class="wool-texture" src="/assets/wol texture.png" alt="Wolvezels">
+            
+            <div class="mini-info" id="matFacts" aria-live="polite">
+                <article>
+                    <b>Enorm land- &amp; waterverbruik</b>
+                    Katoenteelt bedekt slechts 2,5% van alle landbouwgrond wereldwijd,
+                    maar slokt gigantische hoeveelheden water en land op.
+                </article>
+                <article>
+                    <b>Pesticiden</b>
+                    Katoen is verantwoordelijk voor zo’n 16% van het wereldwijde gebruik
+                    van bestrijdingsmiddelen, wat de bodem en lokale ecosystemen uitput.
+                </article>
+                <article>
+                    <b>Impact op de mens</b>
+                    Lokale boeren en omwonenden kunnen in contact komen met giftige
+                    landbouwmiddelen, met ernstige gezondheidsproblemen tot gevolg.
+                </article>
+            </div>
+                <div class="cotton-flower-clip">
+                    <img class="cotton-flower" src="/assets/Katoen 2.png" alt="Katoenbloem">
+                </div>        </section>
+        <section class="section factory-section" data-chapter="De reis van een shirt">
+            <div class="stripes"></div>
+            <div class="intro">
+                <h2>De reis van een shirt</h2>
+                <p class="doorlopendeTekstFactory">Een kledingstuk dat je vandaag koopt, heeft vaak al tienduizenden kilometers afgelegd. Om de nieuwste trends razendsnel en goedkoop in de winkel te krijgen, draait de wereldwijde transportketen van fast fashion continu op volle toeren.</p>
+            <div class="note-fab"><img src="/assets/Note.png" alt="Textielpapier met tape">
+            
+                <p class="tekstNote">
+                    Die reis start al bij de allereerste grondstoffen. Katoen van de snikhete
+                    velden in India, fossiele olie uit het Midden-Oosten of ruwe wol uit
+                    Australië worden duizenden kilometers verplaatst naar spinnerijen en
+                    weverijen. Nog vóór er überhaupt één kledingstuk is genaaid, hebben de
+                    losse vezels er al een wereldreis op zitten.
+                
+                    <span class="water-source">
+                        <button class="water-source-trigger" type="button"
+                            aria-label="Toon bronnen over de wereldwijde textielketen">
+                            ⓘ
+                        </button>
+                        <span class="water-source-popover">
+                            <strong>Bronnen</strong>
+                            <a href="https://www.ellenmacarthurfoundation.org/a-new-textiles-economy"
+                                target="_blank" rel="noopener noreferrer">
+                                Ellen MacArthur Foundation — A New Textiles Economy
+                            </a>
+                            <a href="https://www.wri.org/research/roadmap-net-zero-delivering-science-based-targets-apparel-sector"
+                                target="_blank" rel="noopener noreferrer">
+                                WRI &amp; Apparel Impact Institute — Roadmap to Net Zero
+                            </a>
+                        </span>
+                    </span>
+                </p>
+            
+            </div>
+        </section>
+        <section class="section transport-section" data-chapter="Het logistieke traject">
+        </div><img class="factory-smoke" src="/assets/Fabriek.png" alt="Rookpluimen boven een textielfabriek">
+
+            <div class="BlokLogistiek"><h2 class="titelLogistiek">Het logistieke traject</h2>
+            <p class="doorlopendeTekstFactory LogistiekTekst">Zodra het T-shirt af is, begint het tweede en grootste deel van de reis: <br>de route naar jouw kledingkast.</p></div>
+            <div class="transport-grid">
+                <div class="column">
+                    <h3>Transport over zee</h3>
+                    <p class="TransportTekst">
+                        Zeevracht is de klassieke route van Azië naar Europa. Hoewel een
+                        containerschip per kledingstuk efficiënt lijkt, stootte de wereldwijde
+                        scheepvaart in 2018 ruim <strong>1 miljard ton CO₂</strong> uit. Die
+                        gigantische schaal en kilometerslange route laten een zware ecologische
+                        afdruk achter op onze <strong>oceanen</strong>.
+                
+                        <span class="water-source">
+                            <button class="water-source-trigger" type="button"
+                                aria-label="Toon bron over uitstoot door de scheepvaart">
+                                ⓘ
+                            </button>
+                            <span class="water-source-popover">
+                                <strong>Bron</strong>
+                                <a href="https://www.imo.org/en/mediacentre/pages/whatsnew-1596"
+                                    target="_blank" rel="noopener noreferrer">
+                                    IMO — Fourth Greenhouse Gas Study
+                                </a>
+                            </span>
+                        </span>
+                    </p>
+                </div>
+                
+                <div class="column">
+                    <h3>De laatste kilometers</h3>
+                    <p class="TransportTekst">
+                        Eenmaal aangekomen in de Europese haven is de reis nog niet voorbij.
+                        Via verdeelcentra, vrachtwagens en koeriers legt het kledingstuk de
+                        laatste kilometers af naar de winkelstraat of jouw voordeur.
+                    </p>
+                </div>
+        </div><img class="containers" src="/assets/Zeecontainers.png" alt="Gestapelde zeecontainers">
+
+        </section>
+        <section class="section waste-section" data-chapter="Je kast raakt vol">
+            <div class="inner">
+                <h2>Je kast raakt vol</h2>
+                </p>
+                <div class="clothes-stage" id="clothesStage"><img class="pile" src="/assets/Trash Bag.png"
+                        alt="Lege vuilniszak"><img class="falling f1" src="/assets/t-shirt trash bag.png"
+                        alt="Roze T-shirt"><img class="falling f2" src="/assets/Jeans trash bag.png"
+                        alt="Spijkerbroek"><img class="falling f3" src="/assets/Hoodie trash bag.png"
+                        alt="Bruine hoodie"><img class="falling f4" src="/assets/Pet trash bag.png" alt="Pet"></div>
+                <div class="tag2">Maar waar gaat het heen?</div>
+                <p class="waste-note" id="wasteFact" aria-live="polite">In de EU gooit iedereen jaarlijks gemiddeld <strong>16 kg textiel</strong> weg,
+                    waarvan <strong>85%</strong> gewoon bij het restafval belandt. Zelfs
+                    <strong>onverkochte kleding</strong> wordt op grote schaal vernietigd, terwijl
+                    wereldwijd pas <strong>1%</strong> wordt gerecycled tot nieuwe stof. Zo verandert
+                    een ‘goedkoop’ kledingstuk aan het einde van de rit in een enorme berg
+                    <strong>milieuvervuiling</strong>.</p>
+            </div>
+        </section>
+        <section class="section denim-section" data-chapter="De mensen achter de kleding">
+            <h2 class="denim-section-title">De verborgen kant van arbeid</h2>
+            <div class="note">
+                <img src="/assets/Note.png" alt="">
+        
+                <div class="note-copy">
+                    <h2>Lage lonen, lange dagen</h2>
+                  
+                    <p>
+                      Wereldwijd werken zo’n <strong>60 miljoen mensen</strong>, waarvan ruim
+                      <strong>80% vrouw</strong>, in de kledingindustrie. In landen als Bangladesh,
+                      Cambodja en Myanmar verdienen zij gemiddeld
+                      <strong>minder dan een derde van een leefbaar loon</strong>. Dat is te weinig
+                      voor basisbehoeften zoals voedsel, huisvesting en zorg.
+                    </p>
+                  
+                    <p>
+                      Om te overleven maken miljoenen naaisters <strong>verplicht overuren</strong>.
+                      Werkdagen van <strong>12 tot 14 uur</strong> in snikhete fabrieken zijn eerder
+                      regel dan uitzondering. Zonder vast contract, vakbonden of sociale rechten
+                      houdt de drang naar goedkope mode zo een systeem van <strong>uitbuiting</strong>
+                      in stand.
+                    </p>
+                  
+                    <details class="fact-source">
+                      <summary aria-label="Bekijk de bronnen">ⓘ</summary>
+                      <div class="fact-source-popover">
+                        <b>Bronnen</b>
+                        <a href="https://cleanclothes.org/news/2020/fashion-checker"
+                           target="_blank" rel="noopener noreferrer">
+                          Clean Clothes Campaign — Fashion Checker
+                        </a>
+                        <a href="https://www.ilo.org/publications/wages-and-working-hours-textiles-clothing-leather-and-footwear-industries"
+                           target="_blank" rel="noopener noreferrer">
+                          ILO — Wages and working hours in the textiles, clothing, leather and footwear industries
+                        </a>
+                        <a href="https://oxfambelgie.be/sites/default/files/2022-06/made_in_poverty_the_true_price_of_fashion.pdf"
+                           target="_blank" rel="noopener noreferrer">
+                          Oxfam — Made in Poverty: The True Price of Fashion
+                        </a>
+                      </div>
+                    </details>
+                  </div>
+
+                </div>
+            </div>
+
+            <div class="ending">
+                <img class="Colorswatch" src="/assets/Colorswatch.png" alt="">
+
+                <h2>Wat wordt jouw<br>volgende keuze?</h2>
+                <p>
+                    Je hoeft niet perfect te kiezen. Begin met wat je al hebt:
+                    draag het langer, repareer het of geef het door.
+                </p>
+                <div class="foot">Kleine keuzes maken samen verschil.</div>
+            </div>
+
+<button
+    class="restart-story"
+    type="button"
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+    Bekijk het verhaal opnieuw
+</button>
+
+        </section>
+      
+    </main>
+    <script src="../js/script.js" defer></script>
+</body>
+
+</html>
