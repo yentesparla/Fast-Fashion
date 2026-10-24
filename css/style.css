@@ -348,7 +348,7 @@ p {
     left: 0;
     width: 100%;
     height: 38%;
-    background: url('/assets/Water bovenkant.png') center bottom/cover;
+    background: url('assets/Water bovenkant.png') center bottom/cover;
     transition: height .25s;
 }
 
@@ -385,7 +385,7 @@ p {
     left: 50%;
     width: 100vw;
     height: 100%;
-    background: url('/assets/groene achtergrond.png') right top/106% 125% no-repeat;
+    background: url('assets/groene achtergrond.png') right top/106% 125% no-repeat;
     pointer-events: none;
 }
 
@@ -763,7 +763,7 @@ p {
 
 .label-section:before {
     height: 70%;
-    background-image: url('/assets/Achtergrond roze.png');
+    background-image: url('assets/Achtergrond roze.png');
 }
 
 .transition-collage {
@@ -999,7 +999,7 @@ p {
     margin-left: calc(50% - 50vw);
     padding: 0;
     display: block;
-    background: #f4f1e8 url('/assets/First slide background.png') center center/cover no-repeat;
+    background: #f4f1e8 url('assets/First slide background.png') center center/cover no-repeat;
     isolation: isolate;
     z-index: 0;
 }
@@ -1297,7 +1297,7 @@ body.scrolled .chapter {
 
 .green-background {
     position: relative;
-    background: url('/assets/GroeneAchtergrondMetBubbels.png');
+    background: url('assets/GroeneAchtergrondMetBubbels.png');
     height: 1300px;
     width: 100%;
     z-index: 10;
@@ -1671,7 +1671,7 @@ body.scrolled .chapter {
     max-height: none;
     margin-left: calc(50% - 50vw);
     padding: 0;
-    background: #f7f5ef url('/assets/Rectangle 1.png') center/cover no-repeat;
+    background: #f7f5ef url('assets/Rectangle 1.png') center/cover no-repeat;
 }
 
 .water-fabric-top {
@@ -1962,7 +1962,7 @@ body.scrolled .chapter {
     z-index: 0;
     overflow: visible;
     background-color: #f4f0e5;
-    background-image: url('/assets/Gestreepte achtergrond.png');
+    background-image: url('assets/Gestreepte achtergrond.png');
     background-position: center, center, center;
     background-size: cover, auto, cover;
     background-repeat: no-repeat, repeat, no-repeat;
@@ -2289,7 +2289,7 @@ body.scrolled .chapter {
     left: 50%;
     width: 100vw;
     margin-left: -50vw;
-    background: url('/assets/Jeans.png') center/100% 100% no-repeat;
+    background: url('assets/Jeans.png') center/100% 100% no-repeat;
 }
 
 .denim-section:before {
@@ -2590,7 +2590,7 @@ body.scrolled .chapter {
     position: absolute;
     inset: 0;
     z-index: 2;
-    background: url("/assets/Groene achtergrond.png") center / 100% 100% no-repeat;
+    background: url("assets/Groene achtergrond.png") center / 100% 100% no-repeat;
     pointer-events: none;
 }
 
@@ -2605,7 +2605,7 @@ body.scrolled .chapter {
 .transport-section {
     position: relative;
     z-index: 1 !important;
-    background: url("/assets/Grijze\ achtergrond.png") center / cover no-repeat !important;
+    background: url("assets/Grijze\ achtergrond.png") center / cover no-repeat !important;
     margin-top: -400px;
 }
 
@@ -2747,7 +2747,7 @@ main.page > .waste-section > .inner {
 
 .denim-section {
     min-height: 1500px;
-    background-image: url('/assets/Jeans.png');
+    background-image: url('assets/Jeans.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2782,7 +2782,7 @@ main.page > .factory-section {
     overflow: visible;
     margin-top: -180px;
     background-color: #f4f0e5;
-    background-image: url("/assets/Gestreepte achtergrond.png");
+    background-image: url("assets/Gestreepte achtergrond.png");
     background-position: center;
     background-repeat: no-repeat;
     min-height: 180svh !important;
@@ -2812,7 +2812,7 @@ main.page > .transport-section {
     z-index: 10 !important;
     isolation: isolate;
     min-height: 150svh !important;
-    background: url("/assets/Grijze achtergrond.png");
+    background: url("assets/Grijze achtergrond.png");
     padding: 500px 24px 160px !important;
     margin-top: -300px;
 }
@@ -2883,7 +2883,7 @@ main.page > .waste-section {
     position: relative !important;
     z-index: 30 !important;
     isolation: isolate;
-    background: url("/assets/Rode\ achtergrond.png") center 40% / cover no-repeat !important; /* Pas de verticale positie aan */
+    background: url("assets/Rode\ achtergrond.png") center 40% / cover no-repeat !important; /* Pas de verticale positie aan */
     margin-top: -100px;
 }
 
@@ -2918,7 +2918,7 @@ main.page > .denim-section::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #b84947 url("/assets/Jeans.png") center top / cover no-repeat;
+    background: #b84947 url("assets/Jeans.png") center top / cover no-repeat;
     pointer-events: none;
 }
 
@@ -3139,7 +3139,7 @@ main.page > .transport-section img.containers {
             color-mix(in srgb, var(--material-accent) 48%, transparent),
             color-mix(in srgb, var(--material-accent) 48%, transparent)
         ),
-        url("/assets/groene achtergrond.png") right top / 106% 125% no-repeat
+        url("assets/groene achtergrond.png") right top / 106% 125% no-repeat
         !important;
     transition: background 0.4s ease;
 }
